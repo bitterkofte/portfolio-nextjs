@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SG-Black25";
+  src: url('../public/fonts/SharpGrotesk-Black25.otf');
+}
+@font-face {
+  font-family: "SG-Black20";
+  src: url('../public/fonts/SharpGrotesk-Black20.otf');
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url('../public/fonts/Sofia-Pro-Regular.otf');
+}
+@font-face {
+  font-family: "SofiaBold";
+  src: url('../public/fonts/Sofia-Pro-Bold.otf');
+}
+@font-face {
+  font-family: "SofiaBlack";
+  src: url('../public/fonts/Sofia-Pro-Black.otf');
+}
+
+@layer base {
+  html {
+    font-family: Sofia;
+  }
+  body {
+    @apply bg-[#097254] text-[#e4e4e4] tracking-wide h-screen
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+  li {
+    @apply cursor-pointer hover:text-teal-400 font-SofiaBold
+  }
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#00b89d] to-[#6800cf] text-white
+  }
+}
